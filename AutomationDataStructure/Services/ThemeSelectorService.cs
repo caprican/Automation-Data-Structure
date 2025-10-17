@@ -1,0 +1,59 @@
+﻿using System.Windows;
+
+using AutomationDataStructure.Contracts.Services;
+using AutomationDataStructure.Models;
+
+using ControlzEx.Theming;
+
+using MahApps.Metro.Theming;
+
+namespace AutomationDataStructure.Services;
+
+public class ThemeSelectorService(ISettingsService settingsService) : IThemeSelectorService
+{
+    private readonly ISettingsService settingsService = settingsService;
+
+    private const string HcDarkTheme = "pack://application:,,,/Styles/Themes/HC.Dark.Blue.xaml";
+    private const string HcLightTheme = "pack://application:,,,/Styles/Themes/HC.Light.Blue.xaml";
+
+    public void InitializeTheme()
+    {
+        // TODO: Mahapps.Metro supports syncronization with high contrast but you have to provide custom high contrast themes
+        // We've added basic high contrast dictionaries for Dark and Light themes
+        // Please complete these themes following the docs on https://mahapps.com/docs/themes/thememanager#creating-custom-themes
+        ThemeManager.Current.AddLibraryTheme(new LibraryTheme(new Uri(HcDarkTheme), MahAppsLibraryThemeProvider.DefaultInstance));
+        ThemeManager.Current.AddLibraryTheme(new LibraryTheme(new Uri(HcLightTheme), MahAppsLibraryThemeProvider.DefaultInstance));
+
+        var theme = GetCurrentTheme();
+        SetTheme(theme);
+    }
+
+    public void SetTheme(AppTheme theme)
+    {
+        if (theme == AppTheme.Default)
+        {
+            ThemeManager.Current.ThemeSyncMode = ThemeSyncMode.SyncAll;
+            ThemeManager.Current.SyncTheme();
+        }
+        else
+        {
+            ThemeManager.Current.ThemeSyncMode = ThemeSyncMode.SyncWithHighContrast;
+            ThemeManager.Current.SyncTheme();
+            ThemeManager.Current.ChangeTheme(Application.Current, $"{theme}.Blue", SystemParameters.HighContrast);
+        }
+
+        Application.Current.Properties[nameof(settingsService.Theme)] = theme.ToString();
+    }
+
+    public AppTheme GetCurrentTheme()
+    {
+        if (Application.Current.Properties.Contains(nameof(settingsService.Theme)))
+        {
+            var themeName = Application.Current.Properties[nameof(settingsService.Theme)]?.ToString();
+            _ = Enum.TryParse(themeName, out AppTheme theme);
+            return theme;
+        }
+
+        return AppTheme.Default;
+    }
+}
