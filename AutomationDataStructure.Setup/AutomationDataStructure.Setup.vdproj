@@ -13,12 +13,6 @@
 "SccProvider" = "8:"
     "Hierarchy"
     {
-        "Entry"
-        {
-        "MsmKey" = "8:_EE48FFA5D08E4612B3697F7AE35C180E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
     }
     "Configurations"
     {
@@ -37,6 +31,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.9.0.x64"
+                    {
+                    "Name" = "8:Runtime .NET 9.0.10 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.9.0.x64"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -141,7 +151,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Automation data structure"
         "ProductCode" = "8:{FFB102B0-F7E7-41BC-A3AE-BBF5A5F7E760}"
-        "PackageCode" = "8:{03B306D0-9688-4E54-89A6-20E3D8C26DE0}"
+        "PackageCode" = "8:{B73139F8-2BC8-4716-A763-64BED7574D1C}"
         "UpgradeCode" = "8:{FDCC6316-0989-4598-A79E-276CAC9BE82D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -149,10 +159,10 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:caprican@live.fr"
+        "Manufacturer" = "8:MorelletSoft"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:AutomationDataStructure.Setup"
+        "Title" = "8:Automation data structure installer"
         "Subject" = "8:"
         "ARPCONTACT" = "8:caprican@live.fr"
         "Keywords" = "8:"
@@ -261,7 +271,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7745E53BE35E4507B12B249EBD2E2982"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D82CD033C7D14B41A18B3275DAADA65D"
             {
             "Name" = "8:Automation data structure"
             "Arguments" = "8:"
@@ -269,36 +279,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_EE48FFA5D08E4612B3697F7AE35C180E"
-            "Folder" = "8:_D086E258F5844CD3B119409947C19265"
-            "WorkingFolder" = "8:_2375C839AEBB4961B3427D0548A085E5"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_77DC0E98CA8647E480640D8ED9C8B33C"
-            {
-            "Name" = "8:Automation data structure"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_EE48FFA5D08E4612B3697F7AE35C180E"
+            "Target" = "8:_B53D67ADE76C4635AE3332B78DA8E1BD"
             "Folder" = "8:_8804FA343BBB46F58DDDA70872A8FF54"
-            "WorkingFolder" = "8:_2375C839AEBB4961B3427D0548A085E5"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A26C7D505F6C411D87071471E5D04ED9"
-            {
-            "Name" = "8:Automation data structure"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_EE48FFA5D08E4612B3697F7AE35C180E"
-            "Folder" = "8:_2375C839AEBB4961B3427D0548A085E5"
             "WorkingFolder" = "8:_2375C839AEBB4961B3427D0548A085E5"
             "Icon" = "8:"
             "Feature" = "8:"
@@ -702,9 +684,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EE48FFA5D08E4612B3697F7AE35C180E"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A39A617BE85243269F75DD1B115755E6"
             {
-            "SourcePath" = "8:..\\AutomationDataStructure\\obj\\Release\\net9.0-windows10.0.22621.0\\AutomationDataStructure.dll"
+            "SourcePath" = "8:"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_2375C839AEBB4961B3427D0548A085E5"
@@ -723,7 +705,35 @@
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:Release|Any CPU"
-            "OutputGroupCanonicalName" = "8:Built"
+            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{7110EC2C-B65F-4F46-B282-F8BF4D37B7C3}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B53D67ADE76C4635AE3332B78DA8E1BD"
+            {
+            "SourcePath" = "8:..\\AutomationDataStructure\\obj\\Release\\net9.0-windows10.0.22621.0\\apphost.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_2375C839AEBB4961B3427D0548A085E5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{7110EC2C-B65F-4F46-B282-F8BF4D37B7C3}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

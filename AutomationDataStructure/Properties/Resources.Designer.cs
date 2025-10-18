@@ -70,11 +70,74 @@ namespace AutomationDataStructure.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Convert.
+        /// </summary>
+        public static string MainPageConvertButtomText {
+            get {
+                return ResourceManager.GetString("MainPageConvertButtomText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Device struct.
+        /// </summary>
+        public static string MainPageDeviceDutText {
+            get {
+                return ResourceManager.GetString("MainPageDeviceDutText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Export.
+        /// </summary>
+        public static string MainPageExportCommandText {
+            get {
+                return ResourceManager.GetString("MainPageExportCommandText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Main.
         /// </summary>
         public static string MainPageHeader {
             get {
                 return ResourceManager.GetString("MainPageHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inputs struct.
+        /// </summary>
+        public static string MainPageInputDutText {
+            get {
+                return ResourceManager.GetString("MainPageInputDutText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Inputs map.
+        /// </summary>
+        public static string MainPageInputsText {
+            get {
+                return ResourceManager.GetString("MainPageInputsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Outputs struct.
+        /// </summary>
+        public static string MainPageOutputDutText {
+            get {
+                return ResourceManager.GetString("MainPageOutputDutText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Outputs map.
+        /// </summary>
+        public static string MainPageOutputsText {
+            get {
+                return ResourceManager.GetString("MainPageOutputsText", resourceCulture);
             }
         }
         

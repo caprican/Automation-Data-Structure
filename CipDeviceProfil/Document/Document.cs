@@ -15,7 +15,7 @@ public class Document
 
     public Sections.Device Device { get; set; } = new();
 
-    public Sections.DeviceClassification? DeviceClassification { get; set; }
+    public Sections.DeviceClassification DeviceClassification { get; set; } = new();
 
     public Params Parameters { get; set; } = new();
     public Sections.Assemblies Assemblies { get; set; } = new();
@@ -49,7 +49,6 @@ public class Document
                     Device.ReadString(sectionText);
                     break;
                 case "Device Classification":          // Describes what network the device can be connected to. This section is optional for DeviceNet, required for ControlNet, EtherNet / IP and CompoNet
-                    DeviceClassification = new Sections.DeviceClassification();
                     DeviceClassification.ReadString(sectionText);
                     break;
                 case "ParamClass":                      // Describes configuration details in addition to class-level attributes of the parameter object

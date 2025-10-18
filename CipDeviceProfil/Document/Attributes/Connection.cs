@@ -20,8 +20,8 @@ public class Connection
         TransportClass = ItemBase<ulong>.GetValue(ref reader);
         ConnexionType = ItemBase<ulong>.GetValue(ref reader);
 
-        OTList = ItemBase<string[]>.GetValue(ref reader);
-        TOList = ItemBase<string[]>.GetValue(ref reader);
+        OTList = ItemBase<string[]>.GetValue(ref reader);       // Originator to Target
+        TOList = ItemBase<string[]>.GetValue(ref reader);       // Target to Originator
 
         reader.ReadLine();
         reader.ReadLine();

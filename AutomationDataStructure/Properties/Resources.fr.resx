@@ -120,8 +120,29 @@
   <data name="AppDisplayName" xml:space="preserve">
     <value>Automation data structure</value>
   </data>
+  <data name="MainPageConvertButtomText" xml:space="preserve">
+    <value>Convertir</value>
+  </data>
+  <data name="MainPageDeviceDutText" xml:space="preserve">
+    <value>Structure de l'appareil</value>
+  </data>
+  <data name="MainPageExportCommandText" xml:space="preserve">
+    <value>Export</value>
+  </data>
   <data name="MainPageHeader" xml:space="preserve">
     <value>Main</value>
+  </data>
+  <data name="MainPageInputDutText" xml:space="preserve">
+    <value>Structure des entrées</value>
+  </data>
+  <data name="MainPageInputsText" xml:space="preserve">
+    <value>Mappage des entrées</value>
+  </data>
+  <data name="MainPageOutputDutText" xml:space="preserve">
+    <value>Mappage des sorties</value>
+  </data>
+  <data name="MainPageOutputsText" xml:space="preserve">
+    <value>Mappage des sorties</value>
   </data>
   <data name="SettingsPageChooseLanguageText" xml:space="preserve">
     <value>Changer de langue</value>

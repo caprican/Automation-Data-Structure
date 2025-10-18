@@ -13,6 +13,8 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="..\..\CodesysML\CodesysML\CodesysML.csproj" />
+    <ProjectReference Include="..\..\PlcOpenML\PlcOpenML\PlcOpenML.csproj" />
     <ProjectReference Include="..\CipDeviceProfil\Odva.csproj" />
   </ItemGroup>
   
